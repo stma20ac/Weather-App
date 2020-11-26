@@ -3,8 +3,7 @@ exports.renderHomePage = (req, res) => {
 }
 
 exports.getWeather = (req, res) => {
-    console.log(req)
-    res.send("Your form has been sumbitted")
+    res.send(`you typed ${req.body.city}.`)
 }
 
 exports.renderAboutPage = (req, res) => {
