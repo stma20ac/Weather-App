@@ -22,16 +22,6 @@ app.set("views", "views")
 //completes our configuration
 app.set("view engine", "hbs")
 
-//setting up routes
-app.get("/", (req, res) => {
-    res.render("index", {
-        title: "Sign up"
-    })
-})
-
-app.get("/about", (req, res) => {
-    res.render("about")
-})
 
 app.listen(3000, () => {
     console.log("The server is now running on port 3000")
