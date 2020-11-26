@@ -24,7 +24,9 @@ app.set("view engine", "hbs")
 
 //setting up routes
 app.get("/", (req, res) => {
-    res.render("index")
+    res.render("index", {
+        title: "Sign up"
+    })
 })
 
 app.get("/about", (req, res) => {
