@@ -24,11 +24,11 @@ app.set("view engine", "hbs")
 
 //setting up routes
 app.get("/", (req, res) => {
-    res.send("My first express Web page")
+    res.render("index")
 })
 
 app.get("/about", (req, res) => {
-    res.send("the about page")
+    res.render("about")
 })
 
 app.listen(3000, () => {
