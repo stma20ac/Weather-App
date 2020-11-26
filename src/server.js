@@ -13,5 +13,6 @@ app.get("/about", (req, res) => {
     res.send("the about page")
 })
 
-
-app.listen(3000)
+app.listen(3000, () => {
+    console.log("The server is now running on port 3000")
+})
