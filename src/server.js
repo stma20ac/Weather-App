@@ -19,6 +19,8 @@ app.use(express.static("public"))
 //views are the files we render in the webbrowser (we need to install a viewengies)
 app.set("views", "views")
 
+//completes our configuration
+app.set("view engine", "hbs")
 
 //setting up routes
 app.get("/", (req, res) => {
