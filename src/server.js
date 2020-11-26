@@ -26,7 +26,6 @@ app.get("/about", (req, res) => {
 })
 
 
-
 /*
 app.get("/about", (req, res) => {
     res.send("the about page")
