@@ -7,6 +7,8 @@ const express = require('express')
 //initialized express
 const app = express()
 
+const router = require("./router")
+
 //this will ensure the start
 app.use(express.urlencoded({ extended: false }))
 
@@ -22,7 +24,10 @@ app.set("views", "views")
 //completes our configuration
 app.set("view engine", "hbs")
 
+//ensure that routes get handled and end up here
+app.use("/", router)
 
+//listen to the server
 app.listen(3000, () => {
     console.log("The server is now running on port 3000")
 })
